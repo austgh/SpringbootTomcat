@@ -16,6 +16,7 @@ public class TestController {
 
     @GetMapping("/getTest")
     public void getTest(int num) throws Exception {
+
         log.info("{} 接受到请求:num={}", Thread.currentThread().getName(), num);
         TimeUnit.HOURS.sleep(1);
     }
